@@ -1,0 +1,24 @@
+{
+  "name": "nodetwitterapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "hbs": "^4.0.1",
+    "mongoose": "^5.4.0",
+    "morgan": "~1.9.0",
+    "twitter": "^1.7.1",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "dotenv": "^6.1.0"
+  }
+}

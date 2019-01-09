@@ -1,0 +1,24 @@
+App name = Collect-tweets-TV-Show
+
+Consumer API keys
+x9YfZOet9IwA9vts41kLvRdVh (API key)
+
+KIUK66XCE77J2z8OErqOnohUT4VPnWrbTiv9E61P4Tib8ylWRo (API secret key)
+
+
+x9YfZOet9IwA9vts41kLvRdVh:KIUK66XCE77J2z8OErqOnohUT4VPnWrbTiv9E61P4Tib8ylWRo
+
+TWITTER_BEARER_TOKEN=AAAAAAAAAAAAAAAAAAAAACqi9AAAAAAA8ReoWPttMrlnHvElQHpYSnSTh1U%3DTYTOapU02dQdzDAZXf5O781S8qq1sksveYhCmA1M4uiKgxCR3J
+
+-------------------------------------------------------------------------------
+
+Access token & access token secret
+1076737375102005249-O3N6Bk35V4qeGvx3KZWoEsAf9r12BF (Access token)
+
+6rZUKQGCcNEScc2yZQIZ0M1OvnBUD2RQVm1r1j0JfBV8S (Access token secret)
+
+--------------------------------------------------------------------------------
+
+Dev environment label = CollectTvShow
+
+--------------------------------------------------------------------------------
