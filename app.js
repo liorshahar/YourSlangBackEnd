@@ -25,6 +25,9 @@ app.use(function(req, res, next) {
   next();
 });
 
+app.use("/getTvShowRoutes", getTvShowRoutes);
+app.use("/getTvShowByNameRoutes", getTvShowByNameRoutes);
+
 app.use(function(req, res, next) {
   if (req.originalUrl && req.originalUrl.split("/").pop() === "favicon.ico") {
     return res.sendStatus(204);
@@ -32,9 +35,6 @@ app.use(function(req, res, next) {
 
   return next();
 });
-
-app.use("/getTvShowRoutes", getTvShowRoutes);
-app.use("/getTvShowByNameRoutes", getTvShowByNameRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
