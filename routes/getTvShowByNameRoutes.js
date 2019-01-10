@@ -4,7 +4,7 @@ const _ = require("underscore");
 const getTvShowByName = require("../mongooseDB/Controller/getTvShowByName");
 
 router.get("/:query", function(req, res) {
-  console.log(req.params.query);
+  console.log(req.url);
   getTvShowByName(req.params.query).then((result, err) => {
     if (err) {
       res.send(err);
