@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const _ = require("underscore");
 const getTvShow = require("../mongooseDB/Controller/getTvShow");
+const getTvShowByDate = require("../mongooseDB/Controller/getTvShowBydate");
 
 router.get("/", function(req, res) {
   getTvShow().then((result, err) => {
@@ -10,14 +11,18 @@ router.get("/", function(req, res) {
     } else {
       console.log(result);
       tvShowArray = [];
-      tvShowArray.push(["שם התוכנית", "כמות ציוצים"]);
+
       result.forEach(item => {
-        tvShowArray.push([item._id, item.tweets]);
+        tvShowArray.push([item._id, item.tweets, item.imgsrc]);
       });
       console.log(tvShowArray);
       res.send(tvShowArray);
     }
   });
+});
+
+router.get("/date", function(req, res) {
+  getTvShowByDate();
 });
 
 module.exports = router;
