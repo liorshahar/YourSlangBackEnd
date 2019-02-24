@@ -13,7 +13,7 @@ router.get("/", function(req, res) {
       tvShowArray = [];
 
       result.forEach(item => {
-        tvShowArray.push([item._id, item.tweets, item.imgsrc]);
+        tvShowArray.push({ item });
       });
       console.log(tvShowArray);
       res.send(tvShowArray);
