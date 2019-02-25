@@ -15,12 +15,12 @@ router.get("/:query", function(req, res) {
   });
 });
 
-router.get("/top3", function(req, res) {
-  getTop3(req.params.query).then((result, err) => {
+router.get("/top/top3", function(req, res) {
+  getTop3().then((result, err) => {
     if (err) {
       res.send(err);
     } else {
-      console.log(result);
+      //console.log(result);
       res.send(result);
     }
   });
